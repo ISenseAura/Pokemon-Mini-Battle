@@ -49,6 +49,7 @@ Move *newMove(char name[20], int power, int accuracy, int type)
     moves[moveEntry + 1]->power = power;
     moves[moveEntry + 1]->accuracy = accuracy;
     moves[moveEntry + 1]->type = type;
+    moveEntry++;
 
     return moves[moveEntry + 1];
 };
@@ -59,7 +60,17 @@ void main()
     int X[5] = {30, 40, 60, 4};
     
 
- Move *tackle = newMove("Pikachu", 20, 100,1);
+ Move *tackle = newMove("Tackle    ", 20, 100,0);
+Move *thunder = newMove("Thunder   ", 120, 80,5);
+ Move *watergun = newMove("Water Gun", 60, 100,2);
+ Move *fireblast = newMove("Fire Blast", 120, 80,3);
+ Move *solarbeam = newMove("Solar Beam", 120, 80,1);
+ Move *earthquake = newMove("Earthquake", 80, 100,4);
+ Move *aerialace = newMove("Aerial Ace", 70, 100,6);
+ Move *shadowclaw = newMove("Shadow Claw", 70, 100,7);
+ Move *zenheadbutt = newMove("Zen Headbutt", 80, 100,8);
+
+
 Pokemon *pikachu = newPokemon("Pikachu", X, 5,moves[0]);
 
    // char *ss = pokeDex[0]->name;
@@ -68,5 +79,6 @@ Pokemon *pikachu = newPokemon("Pikachu", X, 5,moves[0]);
     // printf("%s",ss);
     printf("\n %d",pikachu->moves[0]->power);
    showPokeInfo(pikachu);
+   showAllMoves();
     
 }
