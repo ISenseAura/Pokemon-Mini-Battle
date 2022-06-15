@@ -12,7 +12,7 @@
 
 
 char *types[] = {
-    "Grass", "Water", "Fire", "Ground", "Electric", "Flying", "Ghost", "Psychic", "Dark"};
+   "Normal", "Grass", "Water", "Fire", "Ground", "Electric", "Flying", "Ghost", "Psychic", "Dark"};
 
 typedef struct PokemonStats
 {
