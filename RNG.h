@@ -33,12 +33,4 @@ int damage(int lvl,int power, float ATK,float DEF,float super,float critical) {
     //(round(lvl * 2 / 5) * power * round(ATK/DEF) / 50)+ 2;
 }
 
-/*
-void main() {
-    float critical = isLucky(20);
-    int iss = damage(20,80,175,110,2,critical);
-
-    printf("%d", iss);
-    
-}*/
 
